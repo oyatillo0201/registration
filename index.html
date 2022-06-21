@@ -12,51 +12,56 @@
 </head>
 <body>
 
-  <main class="main-content">
+  <div class="main-content">
     <div class="container">
-      <div class="global-wrapper">
-        <div class="hero">
-          <div class="hero-text">Account settings</div>
-          <img class="hero-img" src="./img/xmark-solid.svg" alt="" width="15" height="20">
-        </div>
-        <div class="info">
-          <img src="" alt="">
-          <form class="form" action="echo.htmlacademy.ru">
-            <div class="form-input">
-              <label class="label-heading">Username</label>
-              <input type="text" name="user" placeholder="Enter your username" required>
+
+      <div class="profile-settings">
+        <form class="profile-settings-form" action="echo.htmlacademy.ru" method="post">
+          <header class="profile-settings-header">
+            <h1 class="profile-settings-title">Account settings</h1>
+            <a class="profile-settings-close-link" href="#">
+              <img src="/img/close-icon.svg" alt="Close" width="24" height="24">
+            </a>
+          </header>
+
+          <div class="profile-settings-form-body">
+            <img class="profile-settings-avatar" src="/img/avatar.jpg" alt="Profile img" width="60" height="60">
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-username-input">Username</label>
+              <input class="profile-settings-form-field" type="text" name="username" id="settings-username-input" placeholder="Enter your username" required>
             </div>
 
-            <div class="form-inputs">
-              <div class="user">
-                <label class="label-heading">First Name</label>
-                <input type="text" name="user" placeholder="Enter your first username" required>
+
+            
+            <div class="profile-settings-form-row">
+              <div class="profile-settings-form-group">
+                <label class="profile-settings-form-label" for="settings-first-name-input">First name</label>
+                <input class="profile-settings-form-field" type="text" name="first_name" id="settings-first-name-input" placeholder="Enter your first name" required>
               </div>
-              <div class="user">
-                <label class="label-heading">Last Name</label>
-                <input type="text" name="user" placeholder="Enter your last username" required>
+              <div class="profile-settings-form-group">
+                <label class="profile-settings-form-label" for="settings-last-name-input">Last name</label>
+                <input class="profile-settings-form-field" type="text" name="last_name" id="settings-last-name-input" placeholder="Enter your last name" required>
               </div>
             </div>
-
-            <div class="form-input">
-              <label class="label-heading">Email</label>
-              <input type="text" name="user" placeholder="Enter your username" required>
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-email-input">Email</label>
+              <input class="profile-settings-form-field" type="email" name="email" id="settings-email-input" placeholder="Enter your email" required>
             </div>
-
-            <div class="form-input">
-              <label class="label-heading">Bio</label>
-              <textarea name="" placeholder="Tell us about yourself"></textarea>
+            <div class="profile-settings-form-group">
+              <label class="profile-settings-form-label" for="settings-bio-text">Bio</label>
+              <textarea class="profile-settings-form-field profile-settings-form-field-textarea " name="bio" id="settings-bio-text" placeholder="Tell us about yourself" required></textarea>
             </div>
-          </form>
-        </div>
+          </div>
 
-        <div class="box-2">
-          <div class="cansel">Cansel</div>
-          <div class="save">Save</div>
-        </div>
+          <footer class="profile-settings-form-actions">
+            <button class="profile-settings-form-action" type="button">Cancel</button>
+            <button class="profile-settings-form-action" type="submit">Save</button>
+          </footer>
+        </form>
       </div>
+
     </div>
-  </main>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
